@@ -1,0 +1,29 @@
+h1 Listing tribes
+
+table
+  thead
+    tr
+      th Name
+      th Str
+      th Mov
+      th Dex
+      th Con
+      th
+      th
+      th
+
+  tbody
+    - @tribes.each do |tribe|
+      tr
+        td = tribe.name
+        td = tribe.str
+        td = tribe.mov
+        td = tribe.dex
+        td = tribe.con
+        td = link_to 'Show', tribe
+        td = link_to 'Edit', edit_tribe_path(tribe)
+        td = link_to 'Destroy', tribe, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Tribe', new_tribe_path

@@ -1,0 +1,18 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @monster.name
+p
+  strong Special:
+  = @monster.special
+p
+  strong Level:
+  = @monster.level
+p
+  strong Tribe:
+  = @monster.tribe
+
+= link_to 'Edit', edit_monster_path(@monster)
+'  |
+= link_to 'Back', monsters_path

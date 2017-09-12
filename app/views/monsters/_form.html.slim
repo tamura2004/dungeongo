@@ -1,0 +1,11 @@
+= simple_form_for(@monster) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :special
+    = f.input :level
+    = f.association :tribe
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @tribe.name
+p
+  strong Str:
+  = @tribe.str
+p
+  strong Mov:
+  = @tribe.mov
+p
+  strong Dex:
+  = @tribe.dex
+p
+  strong Con:
+  = @tribe.con
+
+= link_to 'Edit', edit_tribe_path(@tribe)
+'  |
+= link_to 'Back', tribes_path

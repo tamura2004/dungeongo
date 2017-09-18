@@ -17,8 +17,8 @@ class MonsterPdf
 
     monsters.each do |monster|
       id = monster.id
-      x = (id % 4) * UNIT
-      y = (10 - id / 4) * UNIT
+      x = (id % 5) * UNIT
+      y = (10 - id / 5) * UNIT
 
       bounding_box [x, y], width: UNIT, height: UNIT do
         fill_color "444444"

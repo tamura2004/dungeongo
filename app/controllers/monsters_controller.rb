@@ -4,7 +4,7 @@ class MonstersController < ApplicationController
   # GET /names
   # GET /names.json
   def index
-    @monsters = Monster.all
+    @monsters = Monster.order(:id)
     respond_to do |format|
       format.html
       format.pdf do

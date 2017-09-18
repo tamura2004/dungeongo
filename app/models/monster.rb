@@ -26,10 +26,11 @@ class Monster < ApplicationRecord
     Vector[1,1,1,1],
     Vector[1,1,1,1],
     Vector[2,2,2,2],
-    Vector[2,2,2,2]
+    Vector[2,2,2,2],
+    Vector[3,3,3,3]
   ]
 
-  MAGS = [1,2,1,2]
+  MAGS = [1,2,1,2,1]
 
   def ability
     i = level - 1
